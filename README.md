@@ -18,7 +18,7 @@ Ejecutar
 
 En una terminal, dentro de la carpeta donde está main.py, ejecuta:
 
-python main.py
+python ejercicio 36 valdivia.py
 
 Método del reto
 
