@@ -74,9 +74,9 @@ if __name__ == "__main__":
     cola = Cola()
 
     solicitudes = [
-        ("NET01", "Sin señal"),
-        ("NET02", "Lentitud"),
-        ("NET03", "Router"),
+        ("DATO 1:", "Sin señal"),
+        ("DATO 2:", "Lentitud"),
+        ("DATO 3:", "Router"),
     ]
 
     for codigo, descripcion in solicitudes:
@@ -91,7 +91,7 @@ if __name__ == "__main__":
     print("cola antes:", cola.items)
     print("frente:", cola.consultar_frente())
     print("cola despues:", cola.items)
-    assert cola.items == ["NET01", "NET02", "NET03"]
+    assert cola.items == ["DATO 1:", "DATO 2:", "DATO 3:"]
 
     print("\nCOLA - FIFO (primero en entrar, primero en salir):")
     print(cola.desencolar(), cola.desencolar(), cola.desencolar())
@@ -101,4 +101,3 @@ if __name__ == "__main__":
     print("\nPILA - LIFO (ultimo en entrar, primero en salir):")
     print(pila.desapilar(), pila.desapilar(), pila.desapilar())
     print("Pila vacia:", pila.desapilar())
-
